@@ -114,39 +114,42 @@ menu_countries.pack()
 
 #--Button--1
 
-button1_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/amsterdam.png')).resize((32, 21)))
+button1_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/amsterdam.ico')).resize((32, 21)))
 button1 = Button(menu_countries, image=button1_picture, command=lambda: [change_picture('./countries_pictures/amsterdam.jpg'), weather("Amsterdam", "NL"), hour(city="Europe/Amsterdam", name="Amsterdam")])
 button1.grid(row=1, column=1)
 
 #--Button--2
 
-button2_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/barcelona.png')).resize((32, 21)))
+button2_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/barcelona.ico')).resize((32, 21)))
 button2 = Button(menu_countries, image=button2_picture, command=lambda: [change_picture('./countries_pictures/barcelona.jpg'), weather("Barcelona", "ES"), hour(city="Europe/Madrid", name="Barcelona")])
 button2.grid(row=1, column=2)
 
 #--Button--3
 
-button3_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/berlin.png')).resize((32, 21)))
+button3_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/berlin.ico')).resize((32, 21)))
 button3 = Button(menu_countries, image=button3_picture, command=lambda: [change_picture('./countries_pictures/berlin.jpg'), weather("Berlin", "DE"), hour(city="Europe/Berlin", name="Berlin") ])
 button3.grid(row=1, column=3)
 
 #--Button--4
 
-button4_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/buenos_aires.png')).resize((32, 21)))
+button4_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/buenos_aires.ico')).resize((32, 21)))
 button4 = Button(menu_countries, image=button4_picture, command=lambda: [change_picture('./countries_pictures/buenos_aires.jpg'), weather("Buenos Aires", "AR"), hour(city="America/Argentina/Buenos_Aires", name="Buenos Aires")])
 button4.grid(row=1, column=4)
 
 #--Button--5
 
-button5_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/kiev.png')).resize((32, 21)))
+button5_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/kiev.ico')).resize((32, 21)))
 button5 = Button(menu_countries, image=button5_picture, command=lambda: [change_picture('./countries_pictures/kiev.jpg'), weather("Kyiv", "UA"), hour(city="Europe/Kiev", name="Kiev") ])
 button5.grid(row=1, column=5)
 
 #--Button--6
 
-button6_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/paris.png')).resize((32, 21)))
+button6_picture = ImageTk.PhotoImage((Image.open('./countries_buttons/paris.ico')).resize((32, 21)))
 button6 = Button(menu_countries, image=button6_picture, command=lambda: [change_picture('./countries_pictures/paris.jpg'), weather("Paris", "FR"), hour(city="Europe/Paris", name="Paris") ])
 button6.grid(row=1, column=6)
+
+
+
 
 
 
